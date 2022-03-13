@@ -80,3 +80,5 @@ C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\bin\Debug\System.Num
 C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\obj\Debug\ExamTraining.csproj.CopyComplete
+C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\obj\Debug\SecondWindow.g.cs
+C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\obj\Debug\SecondWindow.baml

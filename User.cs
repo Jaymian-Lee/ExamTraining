@@ -6,7 +6,11 @@ namespace ExamTraining
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
+        public string Firstname { get; internal set; }
+        public string Insertion { get; internal set; }
+        public string Lastname { get; internal set; }
+        public string Description { get; set; }
+        public string School { get; set; }
+       
     }
 }

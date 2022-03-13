@@ -31,12 +31,15 @@ namespace ExamTraining
         {
             using (DataContext context = new DataContext())
             {
-                var name = NameTextBox.Text;
-                var address = AddressTextBox.Text;
+                var firstname = FirstnameTextBox.Text;
+                var insertion = InsertionTextBox.Text;
+                var lastname = LastnameTextBox.Text;
+                var description = DescriptionTextBox.Text;
+                var school = SchoolTextBox.Text;
 
-                if (name != null && address != null)
+                if (firstname != null && insertion != null && lastname != null && description != null && school != null)
                 {
-                    context.Users.Add(new User() { Name = name, Address = address });
+                    context.Users.Add(new User() { Firstname = firstname, Insertion = insertion, Lastname = lastname, Description = description, School = school });
                     context.SaveChanges();
                 }
 
@@ -59,15 +62,21 @@ namespace ExamTraining
 
                 User selectedUser = ItemList.SelectedItem as User;
 
-                var name = NameTextBox.Text;
-                var address = AddressTextBox.Text;
+                var firstname = FirstnameTextBox.Text;
+                var insertion = InsertionTextBox.Text;
+                var lastname = LastnameTextBox.Text;
+                var description = DescriptionTextBox.Text;
+                var school = SchoolTextBox.Text;
 
-                if (name != null && address != null)
+                if (firstname != null && insertion != null && lastname != null && description != null && school != null)
                 {
 
                     User user = context.Users.Find(selectedUser.Id);
-                        user.Name = name;
-                        user.Address = address; 
+                        user.Firstname = firstname;
+                        user.Insertion = insertion;
+                        user.Lastname = lastname;
+                        user.Description = description;
+                        user.School = school;
 
                     context.SaveChanges();
                 }
@@ -95,6 +104,24 @@ namespace ExamTraining
             }
 
         }
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            SecondWindow secondWindow = new SecondWindow();
+            secondWindow.Show();
+            Close();
+        }
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            SecondWindow secondWindow = new SecondWindow();
+            secondWindow.Show();
+            Close();
+        }
+        private void ContactButton_Click(object sender, RoutedEventArgs e)
+        {
+            SecondWindow secondWindow = new SecondWindow();
+            secondWindow.Show();
+            Close();
+        }
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
@@ -115,9 +142,15 @@ namespace ExamTraining
         {
             Delete();
         }
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void MenuItemDelete_Click(object sender, RoutedEventArgs e)
         {
-            ItemList.Items.Clear();
+            Delete();
+        }private void MenuItemRead_Click(object sender, RoutedEventArgs e)
+        {
+            Read();
+        }private void MenuItemClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
 
         private void EnableCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -125,15 +158,34 @@ namespace ExamTraining
 
         }
 
-        private void NameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void FirstnameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void AddressTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void InsertionTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+        private void LastnameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        private void DescriptionTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void SchoolTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
     }
 }
 
