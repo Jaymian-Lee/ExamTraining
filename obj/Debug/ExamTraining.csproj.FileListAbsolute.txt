@@ -82,3 +82,5 @@ C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\bin\Debug\System.Thr
 C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\obj\Debug\ExamTraining.csproj.CopyComplete
 C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\obj\Debug\SecondWindow.g.cs
 C:\Users\Jaymian-Lee\source\repos\ExamTraining\ExamTraining\obj\Debug\SecondWindow.baml
+C:\Users\jayre\source\repos\ExamTraining\obj\Debug\ExamTraining.exe
+C:\Users\jayre\source\repos\ExamTraining\obj\Debug\ExamTraining.pdb
